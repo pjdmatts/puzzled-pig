@@ -1,9 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @trail.name %>
-</p>
+<h2>
+	<strong>Name:</strong>
+	<%= @trail.name %>
+</h2>
+
+<h2>Waypoints</h2>
+<%= render @trail.points %>
+
+<h2>Add a waypoint:</h2>
+<%= render 'points/form' %>
 
 <%= link_to 'Edit', edit_trail_path(@trail) %> |
 <%= link_to 'Back', trails_path %>

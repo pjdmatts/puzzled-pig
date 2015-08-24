@@ -1,0 +1,15 @@
+<p>
+	<strong>Name:</strong>
+	<%= point.name %>
+</p>
+
+<p>
+	<strong>Step:</strong>
+	<%= point.step %>
+</p>
+
+<p>
+	<%= link_to 'Remove Waypoint', [point.trail, point],
+	method: :delete,
+	data: { confirm: 'Are you sure?' } %>
+</p>
