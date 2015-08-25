@@ -1,5 +1,14 @@
 class PointsController < ApplicationController
 
+  def show
+    @trail = Trail.find(params[:trail_id])
+    @point = @trail.points.find(params[:id])
+  end
+
+  def edit
+    @trail = Trail.find(params[:trail_id])
+    @point = @trail.points.find(params[:id])
+  end
 
   def create
     @trail = Trail.find(params[:trail_id])
@@ -13,6 +22,14 @@ class PointsController < ApplicationController
     @point.destroy
     redirect_to trail_path(@trail)
   end
+
+  def update
+    @trail = Trail.find(params[:trail_id])
+    @point = @trail.points.find(params[:id])
+    @point.update
+    redirect_to trail_path(@trail)
+  end
+
 
   private
     def point_params

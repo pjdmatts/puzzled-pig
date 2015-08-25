@@ -5,8 +5,33 @@
 	<%= @trail.name %>
 </h2>
 
+<!---
 <h2>Waypoints</h2>
 <%= render @trail.points %>
+-->
+<h2>Waypoints</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Step</th>
+			<th>Name</th>
+			<th colspan="3"></th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @trail.points.each do |point| %>
+		<tr>
+			<td><%= point.step %></td>
+			<td><%= point.name %></td>
+			<td><%= link_to 'Show', [point.trail, point] %></td>
+			<td><%= link_to 'Remove Waypoint', [point.trail, point],
+	method: :delete,
+	data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
 
 <h2>Add a waypoint:</h2>
 <%= render 'points/form' %>
