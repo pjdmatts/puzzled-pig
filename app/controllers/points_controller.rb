@@ -26,7 +26,7 @@ class PointsController < ApplicationController
   def update
     @trail = Trail.find(params[:trail_id])
     @point = @trail.points.find(params[:id])
-    @point.update
+    @point.update(point_params)
     redirect_to trail_path(@trail)
   end
 

@@ -9,3 +9,9 @@
 	<strong>Step:</strong>
 	<%= @point.step %>
 </p>
+
+<%= link_to 'Edit', edit_trail_point_path(@trail, @point) %> |
+<%= link_to 'Remove Waypoint', [@point.trail, @point],
+	method: :delete,
+	data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', @trail %>
