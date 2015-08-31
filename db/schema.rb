@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150823150613) do
+ActiveRecord::Schema.define(version: 20150831231316) do
 
   create_table "points", force: :cascade do |t|
     t.string   "name"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20150823150613) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "trail_id"
+    t.string   "level"
+    t.string   "terrain"
   end
 
   add_index "points", ["trail_id"], name: "index_points_on_trail_id"

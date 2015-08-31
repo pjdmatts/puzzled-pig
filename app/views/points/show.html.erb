@@ -10,6 +10,16 @@
 	<%= @point.step %>
 </p>
 
+<p>
+	<strong>Terrain:</strong>
+	<%= @point.terrain %>
+</p>
+
+<p>
+	<strong>Level:</strong>
+	<%= @point.level %>
+</p>
+
 <%= link_to 'Edit', edit_trail_point_path(@trail, @point) %> |
 <%= link_to 'Remove Waypoint', [@point.trail, @point],
 	method: :delete,

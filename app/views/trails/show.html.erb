@@ -15,6 +15,8 @@
 		<tr>
 			<th>Step</th>
 			<th>Name</th>
+			<th>Terrain</th>
+			<th>Level</th>
 			<th colspan="3"></th>
 		</tr>
 	</thead>
@@ -24,6 +26,8 @@
 		<tr>
 			<td><%= point.step %></td>
 			<td><%= point.name %></td>
+			<td><%= point.terrain %></td>
+			<td><%= point.level %></td>
 			<td><%= link_to 'Show', [point.trail, point] %></td>
 		</tr>
 		<% end %>
