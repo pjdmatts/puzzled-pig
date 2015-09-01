@@ -50,6 +50,6 @@ class TrailsController < ApplicationController
     end
 
     def trail_params
-      params.require(:trail).permit(:name)
+      params.require(:trail).permit(:name, :topic, :source)
     end
 end

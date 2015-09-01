@@ -33,6 +33,6 @@ class PointsController < ApplicationController
 
   private
     def point_params
-      params.require(:point).permit(:name, :step)
+      params.require(:point).permit(:name, :step, :level, :terrain)
     end
 end
