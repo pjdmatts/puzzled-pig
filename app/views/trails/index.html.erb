@@ -17,7 +17,7 @@
       <tr>
         <td><%= link_to trail.name, trail %></td>
         <td><%= trail.topic %></td>
-        <td><%= trail.source %></td>
+        <td><%= link_to trail.source, trail.source %></td>
         <td><%= link_to 'Edit', edit_trail_path(trail) %></td>
         <td><%= link_to 'Destroy', trail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
