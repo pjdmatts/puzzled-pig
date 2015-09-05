@@ -1,3 +1,4 @@
+
 <%= form_for(@trail) do |f| %>
   <% if @trail.errors.any? %>
     <div id="error_explanation">
@@ -11,19 +12,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+<form>
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :topic %><br>
-    <%= f.text_field :topic %>
+    <%= f.text_field :topic, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :source %><br>
-    <%= f.text_field :source %>
+    <%= f.text_field :source, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
   </div>
+</form>
 <% end %>
