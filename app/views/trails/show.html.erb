@@ -5,14 +5,14 @@
 	<%= @trail.name %>
 </h2>
 <p>Topic: <%= @trail.topic %></p>
-<p>Source: <%= @trail.source %></p>
+<p>Source: <%= link_to @trail.source, @trail.source %></p>
 
 <!---
 <h2>Waypoints</h2>
 <%= render @trail.points %>
 -->
 <h2>Waypoints</h2>
-<table class="table table-condensed">
+<table class="table">
 	<thead>
 		<tr>
 			<th>Step</th>

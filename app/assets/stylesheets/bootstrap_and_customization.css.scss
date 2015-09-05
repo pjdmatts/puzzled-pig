@@ -1,12 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-$body-bg:                   	#d0f1bf;
+$body-bg:                   	#5E8860;
 $font-family-sans-serif:    	'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:               45px;
-$navbar-default-bg:           #b6d7b9;
-$navbar-default-brand-color:  #646536;
+$navbar-default-bg:           #98A886;
+$navbar-default-brand-color:  #493843;
 $brand-primary:               #c0392b;
-$jumbotron-bg:                #b6d7b9;
+$jumbotron-bg:                #98A886;
+$primary-color: 							#554348;
+$link-color:									#554348;
 
 @import 'bootstrap';
 
@@ -16,4 +18,8 @@ $jumbotron-bg:                #b6d7b9;
 
 .navbar-brand {
 	font-weight: bold;
+}
+
+body {
+  color: $primary-color;
 }
