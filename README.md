@@ -16,3 +16,18 @@ The concept is to come up with a way to encourage group directed learning by vot
 +   App could store documents, notes, comments, resources (e.g. the presentation used to discuss that point on the trail)
 
 +   Example: In the intermediate section (I’m not there yet) a point on the trail is "Use the asset pipeline effectively"
+
+Where 'trails' come from:
+-------------------------
+
+The idea comes from Thoughbot. For example the [Rails Trailmap](https://github.com/thoughtbot/trail-map/blob/master/rails.md)
+
+There are other developer to-do lists out there:
+
++   [More Thoughtbot Trails](https://github.com/thoughtbot/trail-map)
+
++   [Josh Kemp](http://joshuakemp.blogspot.com/2013/11/how-blacksmith-learned-to-code-and-9.html)
+
++   [Clayton Flesher](http://calvyn82.github.io/2015/05/07/list.html)
+
+
